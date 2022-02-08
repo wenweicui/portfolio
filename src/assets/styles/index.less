@@ -1,0 +1,50 @@
+@import './variables.less';
+@import './components/sideNav.less';
+@import './components/scrollBody.less';
+@import './components/introSection.less';
+@import './components/sectionHeader.less';
+
+@font-face {
+  font-family: 'Single Day';
+  font-weight: normal;
+  font-style: normal;
+  src: url('../fonts/SingleDay-Regular.ttf') format('truetype');
+}
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+main {
+  flex: 1;
+}
+
+.App {
+  display: flex;
+}
+
+.intro-img {
+  height: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}

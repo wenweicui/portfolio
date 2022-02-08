@@ -1,0 +1,169 @@
+.sidenav-container {
+  position: absolute;
+  left: 30px;
+  top: 50%;
+  width: 100vh;
+  height: 55px;
+  transform: translate3d(-50.5%, -50%, 0) rotate(-90deg);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #FFFFFF;
+  border-bottom: 1px solid #aaa;
+}
+.sidenav-container .sidenav-logo {
+  font-weight: 400;
+  font-style: normal;
+  font-family: "Single Day", serif;
+  font-size: 27px;
+  padding-right: 2rem;
+}
+.sidenav-container .sidenav-logo a {
+  color: #1A1A1A;
+  text-decoration: none;
+}
+.sidenav-container .sidenav-link-group {
+  display: flex;
+  padding-left: 3rem;
+}
+.sidenav-container .sidenav-link-group a {
+  flex: 1;
+  color: #1A1A1A;
+  font-size: 20px;
+  font-family: "Roboto", sans-serif;
+  text-decoration: none;
+  padding-right: 3rem;
+}
+.scrollbody-container {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  white-space: nowrap;
+  height: 100vh;
+  position: relative;
+  overflow-y: hidden;
+  overflow-x: scroll;
+  margin-left: 55px;
+  padding: 0 2rem;
+  display: flex;
+}
+.scrollbody-container section {
+  white-space: nowrap;
+  height: 100%;
+  font-size: 1rem;
+  position: relative;
+  z-index: 2;
+}
+.intro-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding-right: 20%;
+}
+.intro-section .intro-main-text {
+  font-weight: 400;
+  font-style: normal;
+  font-family: "Nanum Myeongjo", serif;
+  color: #1A1A1A;
+  font-size: 17vh;
+  margin: 2rem;
+  z-index: 2;
+}
+.intro-section .intro-main-text.intro-text-loop {
+  margin-left: 25%;
+  width: 80vh;
+  height: 39vh;
+  white-space: normal;
+}
+.intro-section .intro-hint-text {
+  font-weight: 400;
+  font-style: normal;
+  font-family: "Nanum Myeongjo", serif;
+  color: #f2f2f2;
+  font-size: 415px;
+  line-height: 1;
+  margin: 0;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+.intro-section .intro-name {
+  display: flex;
+  align-items: center;
+  margin-left: 150px;
+}
+.intro-section .intro-name img {
+  width: 120px;
+  height: 120px;
+  overflow: visible;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  z-index: 1;
+}
+.intro-section .intro-name span {
+  font-weight: 400;
+  font-style: normal;
+  font-family: "Single Day", serif;
+  color: #1A1A1A;
+  font-size: 80px;
+  padding-left: 2rem;
+}
+.section-header {
+  position: absolute;
+  left: 150px;
+  top: 50%;
+  width: 100vh;
+  transform: translate3d(-50.5%, -50%, 0) rotate(-90deg);
+}
+.section-header .section-header-title {
+  font-weight: 400;
+  font-style: normal;
+  font-family: "Nanum Myeongjo", serif;
+  color: #1A1A1A;
+  font-size: 20vh;
+}
+.section-header .section-header-title::after {
+  content: "";
+  height: 2px;
+  width: 13rem;
+  margin: 0 3.75rem;
+  display: inline-block;
+  vertical-align: middle;
+  background: #1A1A1A;
+}
+@font-face {
+  font-family: 'Single Day';
+  font-weight: normal;
+  font-style: normal;
+  src: url('../fonts/SingleDay-Regular.ttf') format('truetype');
+}
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
+}
+main {
+  flex: 1;
+}
+.App {
+  display: flex;
+}
+.intro-img {
+  height: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}

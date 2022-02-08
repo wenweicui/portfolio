@@ -1,0 +1,36 @@
+.sidenav-container {
+  position: absolute;
+  left: 30px;
+  top: 50%;
+  width: 100vh;
+  height: 55px;
+  transform: translate3d(-50.5%,-50%,0) rotate(-90deg);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: @text_white;
+  border-bottom: 1px solid #aaa;
+  .sidenav-logo {
+    font-weight: 400;
+    font-style: normal;
+    font-family: "Single Day", serif;
+    font-size: 27px;
+    padding-right: 2rem;
+    a {
+      color: @text_black;
+      text-decoration: none;
+    }
+  }
+  .sidenav-link-group {
+    display: flex;
+    padding-left: 3rem;
+    a {
+      flex: 1;
+      color: @text_black;
+      font-size: 20px;
+      font-family: "Roboto", sans-serif;
+      text-decoration: none;
+      padding-right: 3rem;
+    }
+  }
+}
