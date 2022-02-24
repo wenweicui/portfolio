@@ -1,12 +1,12 @@
 import React from "react";
 import avatar from '../assets/images/avatar.png';
 var ReactRotatingText = require('react-rotating-text');
- 
 
 const IntroSection = () => {
   const messages = [
     "Software Developer",
     "UI/UX Designer",
+    "Migration Hacker",
     "Graphic Designer"
   ];
 

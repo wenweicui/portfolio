@@ -5,6 +5,9 @@ import SideNav from './components/SideNav';
 import ScrollBody from './components/ScrollBody';
 import IntroSection from './components/IntroSection';
 import ProjectsSection from './components/ProjectsSection';
+import AboutSection from './components/AboutSection';
+import ContactSection from './components/ContactSection';
+import ImageSection from './components/ImageSection';
 
 function App() {
   
@@ -27,6 +30,9 @@ function App() {
           <img src={introImg} className="intro-img" />  
         </section>
         <ProjectsSection />
+        <AboutSection />
+        <ImageSection />
+        <ContactSection />
       </ScrollBody>
     </div>
   );

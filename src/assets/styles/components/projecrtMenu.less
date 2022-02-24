@@ -1,0 +1,47 @@
+.projects-menu {
+  display: flex;
+  margin: 30px 0 30px 350px;
+  border-left: 1.5px solid @text_black;
+  border-right: 1.5px solid @text_black;
+  ul.project-title-container {
+    margin: 0;
+    padding: 2rem;
+    list-style: none;
+    li {
+      padding-bottom: 5vh;
+      .project-title {
+        cursor: pointer;
+        font-size: 30px;
+        color: @text_grey;
+      }
+      &:hover, .project-title.active {
+        color: @text_black;
+        text-decoration: underline;
+        text-decoration-thickness: 1px;
+        text-shadow: 5px 0 0 #e8e8e8;
+      }
+    }
+  }
+  .project-description {
+    width: 500px;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    img {
+      width: 100%;
+    }
+    ul.description-content-container {
+      margin: 0 0 0 2rem;
+      padding: 0;
+      list-style: circle;
+      li {
+        padding-bottom: 2rem;
+        span {
+          font-size: 20px;
+          white-space: initial;
+        }
+      }
+    }
+  }
+}

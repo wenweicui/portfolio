@@ -9,7 +9,7 @@
   align-items: center;
   justify-content: space-between;
   background: #FFFFFF;
-  border-bottom: 1px solid #aaa;
+  border-bottom: 1px solid #eee;
 }
 .sidenav-container .sidenav-logo {
   font-weight: 400;
@@ -132,6 +132,171 @@
   vertical-align: middle;
   background: #1A1A1A;
 }
+.projects-menu {
+  display: flex;
+  margin: 30px 0 30px 350px;
+  border-left: 1.5px solid #1A1A1A;
+  border-right: 1.5px solid #1A1A1A;
+}
+.projects-menu ul.project-title-container {
+  margin: 0;
+  padding: 2rem;
+  list-style: none;
+}
+.projects-menu ul.project-title-container li {
+  padding-bottom: 5vh;
+}
+.projects-menu ul.project-title-container li .project-title {
+  cursor: pointer;
+  font-size: 30px;
+  color: #909090;
+}
+.projects-menu ul.project-title-container li:hover,
+.projects-menu ul.project-title-container li .project-title.active {
+  color: #1A1A1A;
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
+  text-shadow: 5px 0 0 #e8e8e8;
+}
+.projects-menu .project-description {
+  width: 500px;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.projects-menu .project-description img {
+  width: 100%;
+}
+.projects-menu .project-description ul.description-content-container {
+  margin: 0 0 0 2rem;
+  padding: 0;
+  list-style: circle;
+}
+.projects-menu .project-description ul.description-content-container li {
+  padding-bottom: 2rem;
+}
+.projects-menu .project-description ul.description-content-container li span {
+  font-size: 20px;
+  white-space: initial;
+}
+#about-section {
+  display: flex;
+}
+#about-section .about-container {
+  height: 100%;
+  margin-left: 300px;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+}
+#about-section .about-container .about-content-container {
+  width: 900px;
+  white-space: normal;
+}
+#about-section .about-container .about-content-container p {
+  font-size: 18px;
+}
+#about-section .about-container .about-content-container p span {
+  font-size: 50px;
+}
+#about-section .about-container .about-skills-container {
+  margin-top: 2rem;
+}
+#about-section .about-container .about-skills-container h3 {
+  font-size: 30px;
+}
+#about-section .about-container .about-skills-container .about-skills-list {
+  display: flex;
+}
+#about-section .about-container .about-skills-container .about-skills-list .about-skill {
+  flex: 1;
+}
+#about-section .about-container .about-skills-container .about-skills-list .about-skill h4 {
+  font-size: 20px;
+}
+#about-section .about-container .about-skills-container .about-skills-list .about-skill ul {
+  padding-inline-start: 20px;
+}
+#about-section .about-container .about-skills-container .about-skills-list .about-skill ul li {
+  padding: 7px 0;
+}
+.images-container {
+  margin: 2rem;
+  display: flex;
+  position: relative;
+}
+.images-container .dev-img {
+  height: 100%;
+}
+.images-container .image-title {
+  font-size: 200px;
+  position: absolute;
+  top: 50%;
+  left: 32%;
+}
+.images-container .image-title .dev {
+  color: #FFFFFF;
+}
+.images-container .image-title p {
+  margin: 0 0 0 45%;
+}
+.images-container .design-img {
+  height: 60%;
+  margin-left: 45%;
+}
+#contact-section {
+  margin-left: 500px;
+}
+#contact-section .contact-form-container {
+  height: 100%;
+  margin-left: 400px;
+  padding: 2rem 5rem;
+  display: flex;
+  flex-direction: column;
+  width: 700px;
+  white-space: normal;
+}
+#contact-section .contact-form-container h3 {
+  font-size: 46px;
+}
+#contact-section .contact-form-container p {
+  color: #909090;
+  font-size: 20px;
+}
+#contact-section .contact-form-container .contact-form {
+  margin-top: 2rem;
+  display: flex;
+  flex-direction: column;
+  font-size: 20px;
+}
+#contact-section .contact-form-container .contact-form label {
+  text-transform: uppercase;
+}
+#contact-section .contact-form-container .contact-form input,
+#contact-section .contact-form-container .contact-form textarea {
+  margin: 1rem 0 2rem 0;
+  font-size: 20px;
+  font-family: inherit;
+  border: 0;
+  border-bottom: 1px solid #909090;
+}
+#contact-section .contact-form-container .contact-form input:focus-visible,
+#contact-section .contact-form-container .contact-form textarea:focus-visible {
+  outline: 0;
+  border-color: #1A1A1A;
+}
+#contact-section .contact-form-container .contact-form button {
+  padding: 1rem 0;
+  cursor: pointer;
+  flex: 1;
+  align-self: flex-end;
+  border: 0;
+  background: #fff;
+  font-size: 24px;
+  font-family: inherit;
+  font-weight: 600;
+}
 @font-face {
   font-family: 'Single Day';
   font-weight: normal;
@@ -140,7 +305,7 @@
 }
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+  font-family: "Nanum Myeongjo", serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
