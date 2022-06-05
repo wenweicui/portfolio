@@ -1,7 +1,7 @@
 {
   "name": "portfolio",
   "version": "1.0.0",
-  "homepage": "https://wenweicui.github.io/me/",
+  "homepage": "https://wenweicui.github.io/portfolio/",
   "private": true,
   "dependencies": {
     "@emailjs/browser": "^3.4.0",
