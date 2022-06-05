@@ -1,5 +1,5 @@
 import React from "react";
-import pdf from '../assets/pdf/resume.pdf';
+import pdf from "../assets/pdf/resume.pdf";
 
 const SideNav = () => {
   return (
@@ -8,12 +8,12 @@ const SideNav = () => {
         <a href="#projects-section">Projects</a>
         <a href="#about-section">About</a>
         <a href="#contact-section">Contact</a>
-        <a href={pdf}>Resume</a>
+        <a href={pdf} target="_blank" rel="noreferrer">
+          Resume
+        </a>
       </div>
       <div className="sidenav-logo">
-        <a href="#intro-section">
-          @WILLIAMCUI
-        </a>
+        <a href="#intro-section">@WILLIAMCUI</a>
       </div>
     </header>
   );

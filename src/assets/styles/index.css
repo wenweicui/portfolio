@@ -165,6 +165,7 @@
 .projects-menu .project-container {
   width: 60vw;
   display: flex;
+  margin-right: 2rem;
 }
 .projects-menu .project-container .project-description {
   flex: 1;
@@ -363,6 +364,9 @@
   font-family: inherit;
   font-weight: 600;
 }
+#contact-section .contact-form-container .contact-form button:hover {
+  text-decoration: underline;
+}
 #contact-section .contact-form-container .contact-social-group {
   display: flex;
   justify-content: space-between;
@@ -385,6 +389,10 @@
   position: relative;
 }
 .outro-section img {
+  opacity: 0.6;
+  height: 100vh;
+  object-fit: cover;
+  min-width: 1500px;
   width: 100vw;
 }
 .outro-section .outro-header {
@@ -394,10 +402,10 @@
   left: 25%;
 }
 .outro-section .outro-header h1 {
-  font-size: 6rem;
+  font-size: 5rem;
 }
 .outro-section .outro-header h2 {
-  font-size: 4rem;
+  font-size: 3rem;
 }
 @font-face {
   font-family: 'Single Day';
@@ -414,7 +422,7 @@ body {
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
 }
-main {
+.scrollbody-container {
   flex: 1;
 }
 .App {

@@ -1,5 +1,4 @@
 import React, { WheelEvent } from "react";
-import DOM from "react-dom";
 import introImg from "./assets/images/intro.png";
 import SideNav from "./components/SideNav";
 import ScrollBody from "./components/ScrollBody";
@@ -25,7 +24,7 @@ function App() {
       <ScrollBody>
         <IntroSection />
         <section>
-          <img src={introImg} className="intro-img" />
+          <img src={introImg} className="intro-img" alt="intro-bg" />
         </section>
         <ProjectsSection />
         <AboutSection />

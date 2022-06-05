@@ -1,15 +1,35 @@
-import React, {ReactNode} from "react";
-import pdf from '../assets/pdf/resume.pdf';
+import React, { useRef, useEffect } from "react";
 
-export interface ScrollBodyProps  { 
-  children: React.ReactNode
+export interface ScrollBodyProps {
+  children: React.ReactNode;
 }
 
-const ScrollBody = ({children}: ScrollBodyProps) => {
+export function useHorizontalScroll() {
+  const elRef = useRef<HTMLDivElement>(null);
+  useEffect(() => {
+    const el = elRef.current;
+    if (el) {
+      const onWheel = (e: WheelEvent) => {
+        if (e.deltaY === 0) return;
+        e.preventDefault();
+        el.scrollTo({
+          left: el.scrollLeft + e.deltaY,
+        });
+      };
+      el.addEventListener("wheel", onWheel);
+      return () => el.removeEventListener("wheel", onWheel);
+    }
+  }, []);
+  return elRef;
+}
+
+const ScrollBody = ({ children }: ScrollBodyProps) => {
+  const scrollRef = useHorizontalScroll();
+
   return (
-    <main className="scrollbody-container">
+    <div ref={scrollRef} className="scrollbody-container">
       {children}
-    </main>
+    </div>
   );
 };
 

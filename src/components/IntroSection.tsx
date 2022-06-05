@@ -6,8 +6,9 @@ const IntroSection = () => {
   const messages = [
     "Software Developer",
     "UI/UX Designer",
-    "Migration Hacker",
+    "Cloud Developer",
     "Graphic Designer",
+    "Ordinary User",
   ];
 
   return (
