@@ -267,10 +267,11 @@
   font-size: 50px;
 }
 #about-section .about-container .about-skills-container {
-  margin-top: 2rem;
+  margin-top: 1rem;
 }
 #about-section .about-container .about-skills-container h3 {
   font-size: 30px;
+  margin-bottom: 0;
 }
 #about-section .about-container .about-skills-container .about-skills-list {
   display: flex;
