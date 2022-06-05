@@ -1,4 +1,4 @@
-import React, { useRef } from "react";
+import React, { useRef, useState } from "react";
 import SectionHeader from "./SectionHeader";
 import emailjs from "@emailjs/browser";
 
@@ -21,6 +21,7 @@ const socialLinks = [
 ];
 
 const ContactForm = () => {
+  const [buttonText, setButtonText] = useState("Submit");
   const form = useRef<HTMLFormElement>(null);
 
   const sendEmail = (e: any) => {
@@ -35,10 +36,21 @@ const ContactForm = () => {
       )
       .then(
         (result: any) => {
-          console.log(result.text);
+          console.log(result);
+          if (result.status === 200) {
+            setButtonText("Message Sent ✓");
+            setTimeout(function () {
+              setButtonText("Submit");
+            }, 5000);
+          }
         },
         (error: any) => {
-          console.log(error.text);
+          if (error) {
+            setButtonText("Something went wrong, please try agian later");
+            setTimeout(function () {
+              setButtonText("Submit");
+            }, 5000);
+          }
         }
       );
   };
@@ -51,7 +63,7 @@ const ContactForm = () => {
       <input type="email" name="user_email" placeholder="Enter your email" />
       <label>Message</label>
       <textarea name="message" placeholder="Enter your message" />
-      <button type="submit">Submit</button>
+      <button type="submit">{buttonText}</button>
     </form>
   );
 };
