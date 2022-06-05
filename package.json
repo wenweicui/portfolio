@@ -1,6 +1,7 @@
 {
   "name": "portfolio",
-  "version": "0.1.0",
+  "version": "1.0.0",
+  "homepage": "https://wenweicui.github.io/me/",
   "private": true,
   "dependencies": {
     "@emailjs/browser": "^3.4.0",
@@ -22,6 +23,8 @@
     "web-vitals": "^2.1.4"
   },
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "start": "npx less-watch-compiler src/assets/styles/ src/assets/styles/ index.less & react-scripts start",
     "watch-less": "less-watch-compiler src/assets/styles/ src/assets/styles/ index.less",
     "build-less": "less-watch-compiler src/assets/styles/ src/assets/styles/ index.less --run-once",
@@ -48,6 +51,7 @@
     ]
   },
   "devDependencies": {
+    "gh-pages": "^4.0.0",
     "less": "^4.1.2",
     "less-loader": "^10.2.0",
     "ts-loader": "^9.2.6",
