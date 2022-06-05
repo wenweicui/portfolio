@@ -3,6 +3,7 @@
   .contact-form-container {
     height: 100%;
     margin-left: 400px;
+    margin-right: 200px;
     padding: 2rem 5rem;
     display: flex;
     flex-direction: column;
@@ -44,6 +45,23 @@
         font-size: 24px;
         font-family: inherit;
         font-weight: 600;
+      }
+    }
+    .contact-social-group {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-top: 5rem;
+      .social-icon {
+        font-size: 1.5rem;
+        color: @text_black;
+        text-decoration: none;
+        i {
+          padding-right: 0.5rem;
+        }
+        &:hover {
+          text-decoration: underline;
+        }
       }
     }
   }

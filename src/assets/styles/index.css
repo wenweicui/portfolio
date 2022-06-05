@@ -95,6 +95,7 @@
 .intro-section .intro-name img {
   width: 120px;
   height: 120px;
+  border-radius: 50%;
   overflow: visible;
   background-size: cover;
   background-repeat: no-repeat;
@@ -151,34 +152,98 @@
   font-size: 30px;
   color: #909090;
 }
-.projects-menu ul.project-title-container li:hover,
+.projects-menu ul.project-title-container li .project-title:hover,
 .projects-menu ul.project-title-container li .project-title.active {
   color: #1A1A1A;
   text-decoration: underline;
   text-decoration-thickness: 1px;
-  text-shadow: 5px 0 0 #e8e8e8;
+  text-shadow: 5px 0 0 #f3f2f2;
 }
-.projects-menu .project-description {
-  width: 500px;
+.projects-menu ul.project-title-container li .project-title:hover {
+  color: #909090;
+}
+.projects-menu .project-container {
+  width: 60vw;
+  display: flex;
+}
+.projects-menu .project-container .project-description {
+  flex: 1;
   padding: 2rem;
   display: flex;
   flex-direction: column;
+  background-color: #fbfbfb;
+}
+.projects-menu .project-container .project-description .project-description-title {
+  display: flex;
+  align-items: center;
   justify-content: space-between;
+  font-size: 24px;
+  margin-bottom: 1rem;
 }
-.projects-menu .project-description img {
+.projects-menu .project-container .project-description .project-description-title span {
+  color: #909090;
+  font-size: 22px;
+}
+.projects-menu .project-container .project-description .project-description-img {
+  width: 95%;
+  display: flex;
+  margin: auto;
+  position: relative;
+}
+.projects-menu .project-container .project-description .project-description-img img {
+  flex: 1;
   width: 100%;
+  object-fit: cover;
+  object-position: top;
+  margin-top: 1rem;
+  opacity: 1;
+  transition: 0.5s ease;
 }
-.projects-menu .project-description ul.description-content-container {
+.projects-menu .project-container .project-description .project-description-img .project-img-link {
+  transition: 0.5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-decoration: none;
+}
+.projects-menu .project-container .project-description .project-description-img .project-img-link div {
+  background-color: #1A1A1A;
+  color: #FFFFFF;
+  font-size: 16px;
+  padding: 16px 32px;
+}
+.projects-menu .project-container .project-description .project-description-img.hoverable-img-container:hover img {
+  opacity: 0.5;
+}
+.projects-menu .project-container .project-description .project-description-img.hoverable-img-container:hover .project-img-link {
+  opacity: 1;
+}
+.projects-menu .project-container .project-description ul.description-content-container {
   margin: 0 0 0 2rem;
   padding: 0;
   list-style: circle;
 }
-.projects-menu .project-description ul.description-content-container li {
-  padding-bottom: 2rem;
+.projects-menu .project-container .project-description ul.description-content-container li {
+  padding-bottom: 1rem;
 }
-.projects-menu .project-description ul.description-content-container li span {
+.projects-menu .project-container .project-description ul.description-content-container li span {
   font-size: 20px;
   white-space: initial;
+}
+.projects-menu .project-container .project-tags {
+  min-width: 160px;
+  padding: 1rem;
+  background-color: #f3f3f3;
+}
+.projects-menu .project-container .project-tags .tag {
+  padding: 5px 10px;
+  border: 1px solid #d3d2d2;
+  background-color: #f8f8f8;
+  border-radius: 3px;
+  margin-bottom: 1rem;
 }
 #about-section {
   display: flex;
@@ -251,6 +316,7 @@
 #contact-section .contact-form-container {
   height: 100%;
   margin-left: 400px;
+  margin-right: 200px;
   padding: 2rem 5rem;
   display: flex;
   flex-direction: column;
@@ -296,6 +362,42 @@
   font-size: 24px;
   font-family: inherit;
   font-weight: 600;
+}
+#contact-section .contact-form-container .contact-social-group {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 5rem;
+}
+#contact-section .contact-form-container .contact-social-group .social-icon {
+  font-size: 1.5rem;
+  color: #1A1A1A;
+  text-decoration: none;
+}
+#contact-section .contact-form-container .contact-social-group .social-icon i {
+  padding-right: 0.5rem;
+}
+#contact-section .contact-form-container .contact-social-group .social-icon:hover {
+  text-decoration: underline;
+}
+.outro-section {
+  flex: 1;
+  position: relative;
+}
+.outro-section img {
+  width: 100vw;
+}
+.outro-section .outro-header {
+  color: #313030;
+  position: absolute;
+  top: 30%;
+  left: 25%;
+}
+.outro-section .outro-header h1 {
+  font-size: 6rem;
+}
+.outro-section .outro-header h2 {
+  font-size: 4rem;
 }
 @font-face {
   font-family: 'Single Day';
