@@ -1,4 +1,5 @@
 .sidenav-container {
+  z-index: 3;
   position: absolute;
   left: 30px;
   top: 50%;
@@ -24,13 +25,28 @@
   .sidenav-link-group {
     display: flex;
     padding-left: 3rem;
-    a {
+    & > * {
       flex: 1;
       color: @text_black;
       font-size: 20px;
       font-family: "Roboto", sans-serif;
       text-decoration: none;
       padding-right: 3rem;
+    }
+  }
+  .resume-button {
+    padding-right: 0;
+    cursor: pointer;
+  }
+  .resume-menu {
+    padding: 0;
+    z-index: 2;
+    transform: translate3d(0%, 0%, 0) rotate(90deg);
+    li a {
+      color: @text_black;
+      font-size: 20px;
+      font-family: "Roboto", sans-serif;
+      text-decoration: none;
     }
   }
 }
