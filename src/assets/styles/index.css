@@ -1,4 +1,5 @@
 .sidenav-container {
+  z-index: 3;
   position: absolute;
   left: 30px;
   top: 50%;
@@ -26,13 +27,28 @@
   display: flex;
   padding-left: 3rem;
 }
-.sidenav-container .sidenav-link-group a {
+.sidenav-container .sidenav-link-group > * {
   flex: 1;
   color: #1A1A1A;
   font-size: 20px;
   font-family: "Roboto", sans-serif;
   text-decoration: none;
   padding-right: 3rem;
+}
+.sidenav-container .resume-button {
+  padding-right: 0;
+  cursor: pointer;
+}
+.sidenav-container .resume-menu {
+  padding: 0;
+  z-index: 2;
+  transform: translate3d(0%, 0%, 0) rotate(90deg);
+}
+.sidenav-container .resume-menu li a {
+  color: #1A1A1A;
+  font-size: 20px;
+  font-family: "Roboto", sans-serif;
+  text-decoration: none;
 }
 .scrollbody-container {
   padding: 0;
@@ -44,7 +60,7 @@
   overflow-y: hidden;
   overflow-x: scroll;
   margin-left: 55px;
-  padding: 0 2rem;
+  padding: 0 0 0 2rem;
   display: flex;
 }
 .scrollbody-container section {
@@ -312,6 +328,15 @@
   height: 60%;
   margin-left: 45%;
 }
+@media only screen and (max-height: 800px) {
+  .images-container .image-title {
+    top: 40%;
+    left: 24%;
+  }
+  .images-container .design-img {
+    margin-left: 50%;
+  }
+}
 #contact-section {
   margin-left: 500px;
 }
@@ -384,6 +409,11 @@
 }
 #contact-section .contact-form-container .contact-social-group .social-icon:hover {
   text-decoration: underline;
+}
+@media only screen and (max-height: 800px) {
+  #contact-section .contact-form-container .contact-social-group {
+    margin-top: 3rem;
+  }
 }
 .outro-section {
   flex: 1;

@@ -1,5 +1,9 @@
 import React from "react";
-import pdf from "../assets/pdf/resume.pdf";
+import resume from "../assets/pdf/resume.pdf";
+// import designResume from "../assets/pdf/design-resume.pdf";
+// import { Menu, MenuItem } from "@szhsin/react-menu";
+import "@szhsin/react-menu/dist/index.css";
+import "@szhsin/react-menu/dist/transitions/slide.css";
 
 const SideNav = () => {
   const smoothScrollTo = (ev: MouseEvent, id: string) => {
@@ -26,9 +30,27 @@ const SideNav = () => {
         >
           Contact
         </a>
-        <a href={pdf} target="_blank" rel="noreferrer">
+        <a href={resume} target="_blank" rel="noreferrer">
           Resume
         </a>
+        {/* <Menu
+          arrow
+          align="center"
+          menuButton={<div className="resume-button">Resumes</div>}
+          direction="right"
+          className="resume-menu"
+        >
+          <MenuItem>
+            <a href={resume} target="_blank" rel="noreferrer">
+              General Resume
+            </a>
+          </MenuItem>
+          <MenuItem>
+            <a href={designResume} target="_blank" rel="noreferrer">
+              Design Resume
+            </a>
+          </MenuItem>
+        </Menu> */}
       </div>
       <div className="sidenav-logo">
         <a href="#intro-section">@WILLIAMCUI</a>
