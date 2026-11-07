@@ -18,6 +18,8 @@
 
 body {
   margin: 0;
+  background: @text_white;
+  color: @text_black;
   font-family: "Nanum Myeongjo", serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -51,3 +53,6 @@ code {
     transform: rotate(360deg);
   }
 }
+
+// Must stay last so the phone overrides win over the base rules above.
+@import './components/mobile.less';

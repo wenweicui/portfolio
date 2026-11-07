@@ -11,6 +11,7 @@ export function useHorizontalScroll() {
     if (el) {
       const onWheel = (e: WheelEvent) => {
         if (e.deltaY === 0) return;
+        if (window.matchMedia("(max-width: 768px)").matches) return;
         e.preventDefault();
         el.scrollTo({
           left: el.scrollLeft + e.deltaY,

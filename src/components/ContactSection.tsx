@@ -46,7 +46,7 @@ const ContactForm = () => {
         },
         (error: any) => {
           if (error) {
-            setButtonText("Something went wrong, please try agian later");
+            setButtonText("Something went wrong, please try again later");
             setTimeout(function () {
               setButtonText("Submit");
             }, 5000);
@@ -76,7 +76,7 @@ const ContactSection = () => {
         <h3>Drop me a line below</h3>
         <p>
           Whether you want to get in touch, talk about a project collaboration,
-          or just say hi, I'd love to hear from you. Simply fill the from and
+          or just say hi, I'd love to hear from you. Simply fill out the form and
           send me an email.
         </p>
         <ContactForm />
