@@ -11,6 +11,8 @@ import OutroSection from "./components/OutroSection";
 
 function App() {
   const handleWheelEvent = (event: WheelEvent<HTMLDivElement>) => {
+    // The page scrolls vertically on small screens; leave the wheel alone there.
+    if (window.matchMedia("(max-width: 768px)").matches) return;
     event.preventDefault();
     const scrollContainer = document.querySelector(
       "#app-container"

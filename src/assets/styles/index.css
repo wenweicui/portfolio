@@ -81,14 +81,14 @@
   font-style: normal;
   font-family: "Nanum Myeongjo", serif;
   color: #1A1A1A;
-  font-size: 17vh;
+  font-size: 10vh;
   margin: 2rem;
   z-index: 2;
 }
 .intro-section .intro-main-text.intro-text-loop {
   margin-left: 25%;
   width: 80vh;
-  height: 39vh;
+  height: 30vh;
   white-space: normal;
 }
 .intro-section .intro-hint-text {
@@ -446,6 +446,8 @@
 }
 body {
   margin: 0;
+  background: #FFFFFF;
+  color: #1A1A1A;
   font-family: "Nanum Myeongjo", serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -471,5 +473,287 @@ code {
   }
   to {
     transform: rotate(360deg);
+  }
+}
+@media only screen and (max-width: 768px) {
+  html,
+  body {
+    overflow-x: hidden;
+  }
+  .App {
+    display: block;
+  }
+  .App .sidenav-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 52px;
+    transform: none;
+    padding: 0 16px;
+    box-sizing: border-box;
+  }
+  .App .sidenav-container .sidenav-logo {
+    display: none;
+  }
+  .App .sidenav-container .sidenav-link-group {
+    width: 100%;
+    padding-left: 0;
+    justify-content: space-between;
+  }
+  .App .sidenav-container .sidenav-link-group > * {
+    flex: none;
+    padding: 14px 0;
+    font-size: 16px;
+  }
+  .App .scrollbody-container {
+    height: auto;
+    margin-left: 0;
+    padding: 52px 0 0;
+    display: block;
+    overflow: visible;
+    white-space: normal;
+  }
+  .App .scrollbody-container section {
+    height: auto;
+    white-space: normal;
+  }
+  .App .intro-img {
+    display: block;
+    width: 100%;
+    height: 40vh;
+    object-fit: cover;
+  }
+  #projects-section,
+  #about-section,
+  #contact-section {
+    scroll-margin-top: 52px;
+  }
+  .App .section-header {
+    position: relative;
+    left: auto;
+    top: auto;
+    width: 100%;
+    transform: none;
+    overflow: hidden;
+    margin: 40px 0 8px;
+  }
+  .App .section-header .section-header-title {
+    font-size: 56px;
+    margin: 0;
+  }
+  .App .section-header .section-header-title::after {
+    width: 4rem;
+    margin: 0 1.5rem;
+  }
+  .App .intro-section {
+    padding: 32px 16px 24px;
+    gap: 8px;
+  }
+  .App .intro-section .intro-main-text {
+    font-size: 11vw;
+    margin: 0;
+  }
+  .App .intro-section .intro-main-text.intro-text-loop {
+    margin: 0;
+    width: auto;
+    height: auto;
+    min-height: 2.4em;
+  }
+  .App .intro-section .intro-hint-text {
+    position: static;
+    color: #909090;
+    font-size: 6vw;
+  }
+  .App .intro-section .intro-name {
+    margin-left: 0;
+  }
+  .App .intro-section .intro-name img {
+    width: 72px;
+    height: 72px;
+  }
+  .App .intro-section .intro-name span {
+    font-size: 36px;
+    padding-left: 1rem;
+  }
+  .App .projects-menu {
+    flex-direction: column;
+    margin: 0;
+    border: 0;
+  }
+  .App .projects-menu ul.project-title-container {
+    display: flex;
+    gap: 8px;
+    overflow-x: auto;
+    padding: 12px 16px;
+  }
+  .App .projects-menu ul.project-title-container li {
+    flex: none;
+    padding-bottom: 0;
+  }
+  .App .projects-menu ul.project-title-container li .project-title {
+    font-size: 16px;
+    white-space: nowrap;
+    padding: 10px 14px;
+    border: 1px solid #d3d2d2;
+    border-radius: 3px;
+  }
+  .App .projects-menu ul.project-title-container li .project-title.active {
+    border-color: #1A1A1A;
+    text-decoration: none;
+  }
+  .App .projects-menu .project-container {
+    width: auto;
+    margin-right: 0;
+    flex-direction: column;
+  }
+  .App .projects-menu .project-container .project-description {
+    padding: 16px;
+  }
+  .App .projects-menu .project-container .project-description .project-description-title {
+    flex-wrap: wrap;
+    gap: 4px 16px;
+    font-size: 20px;
+  }
+  .App .projects-menu .project-container .project-description .project-description-title span {
+    font-size: 16px;
+  }
+  .App .projects-menu .project-container .project-description .project-description-img {
+    width: 100%;
+    flex-direction: column;
+  }
+  .App .projects-menu .project-container .project-description .project-description-img img {
+    margin-top: 0;
+  }
+  .App .projects-menu .project-container .project-description .project-description-img .project-img-link {
+    position: static;
+    transform: none;
+    opacity: 1;
+  }
+  .App .projects-menu .project-container .project-description .project-description-img .project-img-link div {
+    text-align: center;
+    padding: 14px 16px;
+  }
+  .App .projects-menu .project-container .project-description .project-description-img.hoverable-img-container:hover img {
+    opacity: 1;
+  }
+  .App .projects-menu .project-container .project-description ul.description-content-container {
+    margin-left: 1.2rem;
+  }
+  .App .projects-menu .project-container .project-description ul.description-content-container li span {
+    font-size: 16px;
+  }
+  .App .projects-menu .project-container .project-tags {
+    min-width: 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    padding: 16px;
+  }
+  .App .projects-menu .project-container .project-tags .tag {
+    margin-bottom: 0;
+  }
+  .App #about-section {
+    display: block;
+  }
+  .App #about-section .about-container {
+    height: auto;
+    margin-left: 0;
+    padding: 16px;
+  }
+  .App #about-section .about-container .about-content-container {
+    width: auto;
+  }
+  .App #about-section .about-container .about-content-container p {
+    font-size: 16px;
+  }
+  .App #about-section .about-container .about-content-container p span {
+    font-size: 36px;
+  }
+  .App #about-section .about-container .about-skills-container h3 {
+    font-size: 26px;
+  }
+  .App #about-section .about-container .about-skills-container .about-skills-list {
+    flex-wrap: wrap;
+    gap: 0 16px;
+  }
+  .App #about-section .about-container .about-skills-container .about-skills-list .about-skill {
+    flex: 1 1 140px;
+  }
+  .App #about-section .about-container .about-skills-container .about-skills-list .about-skill h4 {
+    font-size: 18px;
+  }
+  .App .images-container {
+    margin: 16px;
+    flex-direction: column;
+  }
+  .App .images-container .dev-img,
+  .App .images-container .design-img {
+    width: 100%;
+    height: auto;
+    margin-left: 0;
+  }
+  .App .images-container .image-title {
+    position: static;
+    font-size: 15vw;
+  }
+  .App .images-container .image-title .dev {
+    color: #1A1A1A;
+  }
+  .App .images-container .image-title p {
+    margin: 0;
+  }
+  .App #contact-section {
+    margin-left: 0;
+  }
+  .App #contact-section .contact-form-container {
+    height: auto;
+    width: auto;
+    margin: 0;
+    padding: 24px 16px;
+  }
+  .App #contact-section .contact-form-container h3 {
+    font-size: 32px;
+  }
+  .App #contact-section .contact-form-container p {
+    font-size: 16px;
+  }
+  .App #contact-section .contact-form-container .contact-form {
+    font-size: 16px;
+  }
+  .App #contact-section .contact-form-container .contact-form input,
+  .App #contact-section .contact-form-container .contact-form textarea {
+    font-size: 16px;
+    width: 100%;
+    box-sizing: border-box;
+  }
+  .App #contact-section .contact-form-container .contact-form button {
+    font-size: 20px;
+  }
+  .App #contact-section .contact-form-container .contact-social-group {
+    flex-wrap: wrap;
+    gap: 16px;
+    margin-top: 2rem;
+  }
+  .App .outro-section img {
+    min-width: 0;
+    width: 100%;
+    height: 60vh;
+  }
+  .App .outro-section .outro-header {
+    top: 25%;
+    left: 16px;
+    right: 16px;
+  }
+  .App .outro-section .outro-header h1 {
+    font-size: 2rem;
+  }
+  .App .outro-section .outro-header h2 {
+    font-size: 1.25rem;
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  .rfm-marquee {
+    animation: none !important;
   }
 }
