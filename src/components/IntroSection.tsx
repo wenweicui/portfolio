@@ -4,11 +4,11 @@ var ReactRotatingText = require("react-rotating-text");
 
 const IntroSection = () => {
   const messages = [
-    "Software Developer",
-    "UI/UX Designer",
-    "Cloud Developer",
-    "Graphic Designer",
-    "Ordinary User",
+    "Engineering Manager",
+    "Healthcare Software Builder",
+    "Generative AI Practitioner",
+    "Design System Builder",
+    "Full-Stack Developer",
   ];
 
   return (

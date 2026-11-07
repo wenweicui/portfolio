@@ -2,44 +2,49 @@ import React from "react";
 import SectionHeader from "./SectionHeader";
 
 const aboutContent1 =
-  "is a goal and detail-oriented, full-stack developer of mobile-first, responsive web applications as well as mobile-native applications. William is comfortable engaging with clients to solicit requirements and gather feedback on UI design, as well as developing readable and maintainable code in a team, or individual setting.";
+  "is an engineering manager in Toronto with 8+ years of experience in production software and 3+ years leading healthcare teams. He currently manages eight engineers across clinical reporting and clinical data platform teams at Prenuvo, while staying hands-on in system design, code review and prototyping.";
 const aboutContent2 =
-  "Possessing a long track record of developing responsive single-page apps, hybrid mobile apps, and RESTful APIs, William has demonstrated proficiency and expertise in modern application development practices (DevOps) and technologies.";
+  "He owns a 24/7 clinical reporting platform used by around 100 radiologists in four countries, builds generative AI features with clinical validation and PII guardrails, and leads the migration of a core clinical data store to HL7 FHIR on AWS HealthLake. He also champions AI-assisted engineering, including Cursor, the Model Context Protocol and spec-driven development.";
 const aboutContent3 =
-  "With his commitment to life-long learning and life-balance demonstrated by recent additional education in Cloud Migration, Artificial Intelligence and Machine Learning, William is armed with the skills and experience needed to create dynamic, professional, user-friendly experiences in an agile team environment.";
+  "William holds an MSc in Computer Science with Artificial Intelligence from the University of York. Earlier in his career he built several React design systems and front-end applications, which gives him a strong eye for user experience, accessibility and performance.";
 
 const skills = {
-  Languages: [
+  Leadership: [
+    "Team Leadership",
+    "Hiring & Mentoring",
+    "Tech Strategy",
+    "Roadmapping",
+    "Cross-team Delivery",
+  ],
+  "AI & Data": [
+    "Generative AI",
+    "LLM Evaluation",
+    "PII / PHI Guardrails",
+    "HL7 FHIR",
+    "Airflow",
+    "Databricks",
+  ],
+  Code: [
     "TypeScript",
     "JavaScript",
-    "CSS / Scss / Less",
-    "HTML5",
-    "Java",
-    "Ruby on Rails",
-    "Clojure",
     "Python",
-  ],
-  Frameworks: [
-    "React JS",
+    "SQL",
+    "GraphQL",
+    "React",
     "React Native",
     "Node.js",
-    "ClojureScript",
-    "Reframe",
-    "Redux",
-    "Jquery",
-    "Boostrap",
+    "Rails",
   ],
-  Platforms: ["Linux", "MacOS", "Windows", "Android", "iOS", "AWS", "MS Azure"],
-  DevOps: ["git", "GitHub", "GitLab", "Bitbucket", "Jira", "Trello", "Slack"],
-  Design: [
-    "Figma",
-    "Framer",
-    "Sketch",
-    "Adobe XD",
-    "Adobe Photoshop",
-    "Adobe Illustrator",
-    "Adobe After Effect",
+  "Cloud & Tools": [
+    "AWS",
+    "GCP",
+    "MS Azure",
+    "CI/CD",
+    "Cursor",
+    "Claude Code",
+    "MCP",
   ],
+  Design: ["Figma", "Storybook", "Design Systems", "Accessibility"],
 };
 
 const ContentSection = () => (
